@@ -1,0 +1,109 @@
+html,body{
+    height:100vh;
+    margin:0;
+}
+.container{
+    display: flex;
+    width:100%;
+    height:100vh;
+    
+     align-items:center;
+     justify-content: center;
+     background: linear-gradient(to left , #9b1266, #8346c4, #615efe);
+     animation: bg-animation 10s infinite alternate;
+     font-family: Monospace;
+     background-size: 200%;
+     font-size: 11px;
+     
+}
+@keyframes bg-animation {
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+  }
+  h1{
+    position:absolute;
+    text-align: left;
+    margin-top: -600px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+.upc{
+    
+    width: 22%;
+    height: 350px;
+    background-color: transparent;
+    margin: 150px;
+    box-shadow: 5px 5px 20px black;
+    position: relative;
+}
+.gradiant{
+    background-image:linear-gradient(rgb(88, 88, 168),rgb(31, 31, 149));
+    height:125px;
+    border-radius: 4px;
+}
+.profile-down img{
+    height:190px;
+    margin-top: -100px;
+    border-radius: 100px;
+    padding:5px;
+    margin-left: 90px;
+    background:white;
+}
+
+
+button{
+    background: rgb(82, 82, 200);
+    width:30%;
+    height:40px;
+     padding:10px;
+     border-radius: 10px;
+
+}
+button:hover{
+    background:rgb(174, 172, 172);
+    
+
+}
+.profile_btn a {
+    text-decoration: none;
+    color:white;
+
+}
+.profile_btn a:hover {
+    color:black;
+
+}
+.textcontain{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(49, 48, 48, 0.75);
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    transition: .5s ease;
+    text-align: center;
+}
+.textcontain span{
+    color: #f1f1f1;
+    text-decoration: solid;
+    font-weight: 700;
+    font-size: x-large;
+    font-family: cursive;
+}
+.textcontain p{
+    color: #f1f1f1;
+    text-decoration: solid;
+    font-weight: 100;
+    font-size: medium;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.upc:hover .textcontain {
+    height: 55%;
+}
