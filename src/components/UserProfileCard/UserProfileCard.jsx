@@ -7,7 +7,7 @@ import profile_icon1 from '../Assets/image1.jpg'
 const UserProfileCard = () => {
   return (
     <div className="container">
-      <h1>User Profile Card</h1>
+    
     <div className="upc">
       <div className="gradiant"></div>
       <div className='profile-down'>
